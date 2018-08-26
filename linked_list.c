@@ -5,7 +5,7 @@ typedef struct no No;
 
 struct no{
     char letra;
-    struct ponto *prox;
+    struct no *prox;
 };
 
 No *criar_no(){ //FUNCAO PARA CRIAR NO
