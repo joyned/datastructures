@@ -38,6 +38,22 @@ void imprimir_lista(No *HEAD){ //IMPRIMIR LISTA
     }
 }
 
+int retornarPosicao(No *HEAD){
+    No *aux = HEAD;
+    char letraBusca;
+    int x = 0;
+    
+    printf("Digite a letra para buscar:");
+    scanf("%c", &letraBusca);
+    
+    while(aux->letra != letraBusca){
+        aux = aux->prox;
+        x++;
+    }
+    
+    return printf("Posição: %d", x);
+}
+
 
 int main(){
 
